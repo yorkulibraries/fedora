@@ -1,9 +1,14 @@
-maintainer       "UTL"
-maintainer_email "cfg-admin@library.utoronto.ca"
-license          "Apache 2.0"
-description      "Installs/Configures fedora"
+name             'fedora-commons'
+maintainer       'MJ Suhonos'
+maintainer_email 'mjsuhonos@ryerson.ca'
+license          'MIT License <http://mit-license.org>'
+description      'Installs/Configures Fedora Commons'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.1"
-depends "database"
-depends "ark"
+version          '3.7.0'
 
+depends          'java'
+depends          'tomcat'
+
+depends          'database'
+depends          'mysql'
+depends          'postgresql'

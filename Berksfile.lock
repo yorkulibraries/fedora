@@ -1,0 +1,51 @@
+{
+  "sources": {
+    "ubuntu-baseline": {
+      "locked_version": "0.1.0",
+      "git": "git://github.com/mjsuhonos/ubuntu-baseline.git",
+      "ref": "5cd200d8a70d0e07510fbd4e67a64feda92aac5c"
+    },
+    "fedora-commons": {
+      "path": "."
+    },
+    "apt": {
+      "locked_version": "2.1.1"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "unattended_upgrades": {
+      "locked_version": "0.0.2"
+    },
+    "java": {
+      "locked_version": "1.14.0"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "aws": {
+      "locked_version": "0.101.4"
+    },
+    "tomcat": {
+      "locked_version": "0.15.2"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "database": {
+      "locked_version": "1.4.0"
+    },
+    "mysql": {
+      "locked_version": "3.0.4"
+    },
+    "postgresql": {
+      "locked_version": "3.0.4"
+    },
+    "xfs": {
+      "locked_version": "1.1.0"
+    }
+  }
+}

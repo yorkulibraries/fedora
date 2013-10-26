@@ -1,53 +1,16 @@
-#
-# Cookbook Name:: fedora
-# Default:: default
-#
-# Copyright 2012 UTL
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+# Version of Fedora Commons to install
+default[:fedora][:version] = '3.7.0'
+default[:fedora][:sha256] = '40d3fe844cf8d20d9556e369792d162c2eb54c46274126da6734db09d0a3521c'
 
-default['fedora']['db_name'] = ""
-default['fedora']['mysql_host'] = ""
-default['fedora']['db_user_name'] = ""
-default['fedora']['db_user_pwd'] = ""
-default['fedora']['root'] = "/opt/fedora"
-default['fedora']['real_root'] = "/opt/fedora3"
-default['fedora']['source_server'] = ""
-default['fedora']['source_path'] = ""
-default['fedora']['version'] = ""
-default['fedora']['install_tmp'] = ""
-default['fedora']['fedora_admin_pass'] = ""
-default['fedora']['fedora_admin_user'] = "fedoraAdmin"
-default['fedora']['allow_non_local'] = "yes"
+# System-specific Fedora root path
+default[:fedora][:installpath] = '/usr/share/fedora'
 
-###properties for install.prpoerties
-default['fedora']['resource_index_enabled'] = "true"
-default['fedora']['messaging_enabled'] = "true"
-default['fedora']['apia_auth_required'] = "false"
-default['fedora']['database_jdbcDriverClass'] = "com.mysql.jdbc.Driver"
-default['fedora']['ssl_available'] = "false"
-default['fedora']['messaging_uri'] = "vm\\:(broker\\:(tcp\\://localhost\\:61616))"
-default['fedora']['database_mysql_driver'] = "/usr/share/java/mysql-connector-java.jar"
-default['fedora']['fesl_authz_enabled'] = "false"
-default['fedora']['deploy_local_services'] = "true"
-default['fedora']['xacml_enabled'] = "false"
-default['fedora']['database_mysql_jdbcDriverClass'] = "com.mysql.jdbc.Driver"
-default['fedora']['fedora_serverHost'] = "#{node['fqdn']}"
-default['fedora']['database'] = "mysql"
-default['fedora']['database_driver'] = "/usr/share/java/mysql-connector-java.jar"
-default['fedora']['fedora_serverContext'] = "fedora"
-default['fedora']['llstore_type'] = "akubra-fs"
-default['fedora']['fesl_authn_enabled'] = "true"
-default['fedora']['install_type'] = "custom"
-default['fedora']['servlet_engine'] = "existingTomcat"
+# Default install.properties values
+default[:fedora][:context] = 'fedora'
+default[:fedora][:adminpassword] = 'fedoraAdmin'
+
+# Database connection information; use built-in Derby by default
+default[:fedora][:database][:type] = 'derby'
+default[:fedora][:database][:name] = 'fedora3'
+default[:fedora][:database][:username] = 'fedoraAdmin'
+default[:fedora][:database][:password] = 'fedoraAdmin'
