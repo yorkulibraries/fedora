@@ -2,7 +2,6 @@
 
 Installs and configures [Fedora Commons](http://www.fedora-commons.org), supporting:
 
-* Apache Tomcat (embedded)
 * Apache Derby (embedded)
 * PostgreSQL
 * MySQL
@@ -24,13 +23,15 @@ Opscode cookbooks:
 * postgresql
 
 # Usage
+__TODO__
 
 # Attributes
+__TODO__
 
 # Recipes
-Include the Fedora recipe to install Fedora Commons on your system; this will also automatically start the server.
+Include the 'default' recipe to install Fedora Commons on your system.
 
-	include_recipe "fedora"
+	include_recipe "fedora-commons::default"
 ### Default
 - install/configure Fedora Commons using embedded Derby as the database
 ### MySQL
@@ -43,3 +44,7 @@ MIT License (<http://mit-license.org>)
 
 # Author
 Copyright © 2013 MJ Suhonos (<mjsuhonos@ryerson.ca>)
+###Acknowledgements
+Many thanks to Graham Stewart and others at the University of Toronto Libraries for [LibraryChef](https://github.com/LibraryChef).
+
+Thanks also to Kai Sternad for [Instant Fedora Commons](https://github.com/kaisternad/instant-fedora-commons).
