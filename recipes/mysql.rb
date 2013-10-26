@@ -39,5 +39,8 @@ mysql_database_user node[:fedora][:database][:username] do
   action :grant
 end
 
+# set database type to mysql
+node.default[:fedora][:database][:type] = 'mysql'
+
 # install fedora
 include_recipe 'fedora-commons::default'

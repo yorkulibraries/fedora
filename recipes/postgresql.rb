@@ -40,5 +40,8 @@ postgresql_database_user node[:fedora][:database][:username] do
   action :grant
 end
 
+# set database type to postgresql
+node.default[:fedora][:database][:type] = 'postgresql'
+
 # install fedora
-include_recipe 'fedora::default'
+include_recipe 'fedora-commons::default'

@@ -10,7 +10,6 @@ default[:fedora][:context] = 'fedora'
 default[:fedora][:adminpassword] = 'fedoraAdmin'
 
 # Database connection information; use built-in Derby by default
-default[:fedora][:database][:type] = 'derby'
 default[:fedora][:database][:name] = 'fedora3'
 default[:fedora][:database][:username] = 'fedoraAdmin'
 default[:fedora][:database][:password] = 'fedoraAdmin'
