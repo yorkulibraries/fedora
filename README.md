@@ -32,11 +32,13 @@ __TODO__
 Include the 'default' recipe to install Fedora Commons on your system.
 
 	include_recipe "fedora-commons::default"
-### Default
+#### Default
 - install/configure Fedora Commons using embedded Derby as the database
-### MySQL
+
+#### MySQL
 - install/configure Fedora Commons using a MySQL instance on same node
-### PostgreSQL
+
+#### PostgreSQL
 - install/configure Fedora Commons using a PostgreSQL instance on same node
 
 # License
